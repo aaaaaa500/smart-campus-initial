@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Smooth scrolling and better default font rendering */
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Nicer native time input styling */
+input[type="time"]::-webkit-calendar-picker-indicator {
+  opacity: 0.5;
+  cursor: pointer;
+  transition: opacity 0.15s;
+}
+input[type="time"]:hover::-webkit-calendar-picker-indicator {
+  opacity: 0.8;
+}
+input[type="time"]:focus::-webkit-calendar-picker-indicator {
+  opacity: 1;
+}
